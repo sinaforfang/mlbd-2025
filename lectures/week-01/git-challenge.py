@@ -9,7 +9,10 @@ def person_a():
     dataframe: containing first 5,000 rows of school_performace.csv
     """
     # Code goes over here.
-
+    filepath = "data/school_performance.csv"
+    dataframe = pd.read_csv(filepath).head(5000)
+    
+    return dataframe
     
     raise NotImplementedError()
 
